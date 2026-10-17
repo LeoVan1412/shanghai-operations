@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "extractionDate": "2026-10-15",
+  "modVersion": "0.8.1-dev.2",
+  "sourceRepository": "https://github.com/LeoVan1412/shanghai-pvg",
+  "sourceCommit": "a7339762f741448d1543fbff25f535c01695aadb",
+  "sourcePrefix": "operations-preview/0.8.1-dev.2",
+  "originalSnapshotChecksumsVerified": 20,
+  "runtimeSHA256": "bba8166cc1af74238d27e5e8a510c9249b578752bd9fa762a73fe78fbef510b3",
+  "boundaryAssetSHA256": "aa8268ec97b2ea59046dc4dabac8648edaed61c83d19a0be705190abd0fff05e",
+  "copiedFiles": [
+    {
+      "source": "source/operations-mod/index.js",
+      "destination": "source/operations-mod/index.js",
+      "sha256": "2ca11b8008bc859694e9929114dc9b40ab173407dc63900e5dde0ae0f86b1cea"
+    },
+    {
+      "source": "source/operations-mod/manifest.json",
+      "destination": "source/operations-mod/manifest.json",
+      "sha256": "75b210a918ba6c552b79108cfa3512f309ff670976f10475012a21a0450e7e4a"
+    },
+    {
+      "source": "source/operations-mod/dispatch-core.js",
+      "destination": "source/operations-mod/dispatch-core.js",
+      "sha256": "454dd67394e7cd1b3dd3d1672c4976f4f95ecbec3db8d1fc01a9fcb060353f74"
+    },
+    {
+      "source": "source/operations-mod/expansion-core.js",
+      "destination": "source/operations-mod/expansion-core.js",
+      "sha256": "05bc9bbd2f29f073883c99a101b72644cefa6f5eb0bbeb11e053d97882df5abd"
+    },
+    {
+      "source": "source/scripts/test_operations_mod.js",
+      "destination": "source/scripts/test_operations_mod.js",
+      "sha256": "3c96577296d06721cd726892ed2238e8714bf9071a57ad03c2f87fa2d086089d"
+    },
+    {
+      "source": "source/scripts/test_service_planner.js",
+      "destination": "source/scripts/test_service_planner.js",
+      "sha256": "0de434991d535aa64c56f8a8a74f774b2e11863c410dc177262de195c49cfd7a"
+    },
+    {
+      "source": "source/scripts/test_dispatch_core.js",
+      "destination": "source/scripts/test_dispatch_core.js",
+      "sha256": "637a635114c12c108f4b03aa37aaa12d177d7552625293e4bbadc3f3ef795460"
+    },
+    {
+      "source": "source/scripts/test_dispatch_index.js",
+      "destination": "source/scripts/test_dispatch_index.js",
+      "sha256": "6dde8ec88beae11320de37d2f65e6e3c43eb096f3a1d65e3fb4ad0cf35d0ce14"
+    },
+    {
+      "source": "source/scripts/test_expansion_core.js",
+      "destination": "source/scripts/test_expansion_core.js",
+      "sha256": "75d6701548b7310cefea04417df64a3e0ff55a70451612ef3254b665456e956f"
+    },
+    {
+      "source": "source/scripts/test_expansion_transaction.js",
+      "destination": "source/scripts/test_expansion_transaction.js",
+      "sha256": "c0a5170099a5808d7f74f2a5cda4a091ab36ce1ac195bbbe581f2e71e0ef14bd"
+    },
+    {
+      "source": "source/scripts/test_dispatch_safety.js",
+      "destination": "source/scripts/test_dispatch_safety.js",
+      "sha256": "12c1c2a7487f2de069fdb6e6eb6966c15c4722d04b565b3395981edcf6541942"
+    },
+    {
+      "source": "leovan-shanghai-operations/LICENSE",
+      "destination": "LICENSE",
+      "sha256": "08ce0462d583415fba56603cf6418c43c5d28e9638973d85b667db1bb7fc8edc"
+    },
+    {
+      "source": "leovan-shanghai-operations/README.md",
+      "destination": "docs/LEGACY_CAPABILITIES_2026-10-01.md",
+      "sha256": "1d348e9966c3109441e7bdd74566b60ab48eeff9479f69154206ed706b117c0b"
+    },
+    {
+      "source": "COMMUNITY_COMPARISON_2026-10-01.md",
+      "destination": "docs/LEGACY_COMPARISON_2026-10-01.md",
+      "sha256": "faf7cb727c24944be786fa190ee4daf81e947f57757aab5a234ae0c03a3099f0"
+    },
+    {
+      "source": "review-evidence/r16-summary.json",
+      "destination": "evidence/r16-summary.json",
+      "sha256": "3f45753e4b334cf584f30b9aa438bec01f0ff6a3793d161d32d03901f79dcb26"
+    }
+  ],
+  "runtimeChanged": false,
+  "publishReady": false,
+  "scope": "Independent project extraction. No new loaded-game acceptance, map-data improvement or community approval."
+}

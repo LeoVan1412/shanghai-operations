@@ -1,2 +1,61 @@
-# shanghai-operations
-Shanghai Operations / 上海多制式运营 — route-first planning, fleet guidance and reversible native services for PVG. Development preview.
+# Shanghai Operations · 上海多制式运营
+
+让玩家先设计线路，再查看停站、站型和配车建议，最后把方案应用为可撤销的独立运营服务。
+
+**当前版本：0.8.1-dev.2，开发预览。** 支持上海 PVG；完整载客周转、长时间运行、多类咽喉和普通玩家高级功能启用流程仍待验收。社区审核尚未通过。
+
+- [开发审核包与校验值](review-package/README.md)
+- [使用方法与兼容范围](docs/PLAYER_GUIDE.md)
+- [能力、差异与验证范围](docs/COMPARISON.md)
+- [待完成的验收](docs/ACCEPTANCE_STATUS.md)
+- [新模组提交材料](submission/PUBLISH_MOD_DRAFT.md)
+
+## 玩家的操作流程
+
+1. 在游戏原生编辑器建立线路、选择车站。
+2. 打开“上海线路规划”，选择普通、快车或急行；按需要组合兼容的直通线路。
+3. 查看实际轨道上的地图预览、停站摘要与配车建议。
+4. 应用为新增服务；计划配车和实际上线车辆分别显示。
+5. 如需补车，确认价格后购买；方案可以按归属撤销。
+
+自动站型结合实际走廊与既有股道。缺少通过线或股道时显示“待改造”。新服务仍受到共享轨道容量、原生信号与拥堵限制。
+
+## 当前能力
+
+- 五档轨道及配套车辆：轻运量 80、中运量 120、高运量 160、城际 200、高铁 300 km/h。
+- 普通 / 快车 / 急行停站方案，可与满足条件的直通运营组合。
+- 普通站、越行站、换乘枢纽、综合枢纽的站型建议。
+- 基于运行时间、最短站台、库存和其他线路占用的配车助手。
+- 原生寻路建立独立服务；方案凭据随存档保存，支持有条件撤销。
+- 2/4/6/8 股道模板、自动增加通过线、动态越行和离站保护的开发接口。
+
+最后一项尚无完整的普通玩家启用流程。安装此预览不会自动开启高级调度。
+
+## 地图依赖
+
+这是运营代码项目。地图本体仍在 [shanghai-pvg](https://github.com/LeoVan1412/shanghai-pvg)，正式地图包仍为 v2.1.0。当前代码只识别 PVG，不兼容社区现有的 SHA 上海地图，也不包含最新预建线网存档。
+
+新仓库保留模组 ID `leovan-shanghai-operations`，应替换同 ID 的旧模组，不能同时安装两份。完整备份和独立测试进度是使用开发候选的前提。
+
+## 独立构建
+
+需要 Node.js 18 或更新版本；没有第三方构建依赖。
+
+```sh
+npm test
+npm run build
+npm run package
+npm run verify
+```
+
+构建输出位于 `dist/mod/`，审核 ZIP 位于 `review-package/`。构建只读取本仓库的公开代码与匿名排除轮廓，不读取原地图工程、移动硬盘、个人存档或游戏原生文件。
+
+运行代码沿用 r16 测试候选，其 SHA-256 为：
+
+`bba8166cc1af74238d27e5e8a510c9249b578752bd9fa762a73fe78fbef510b3`
+
+本次拆分增加独立构建、打包及提交资料，未新增游戏运行测试。该指纹的历史测试范围见 [r16 摘要](evidence/r16-summary.json)。
+
+## 许可与来源
+
+自有代码使用 [MIT](LICENSE)。内含公开快照中的匿名排除几何，数据署名及许可见 [LICENSE-DATA.md](LICENSE-DATA.md)。源码迁移记录见 [extraction-2026-10-15.json](evidence/extraction-2026-10-15.json)。

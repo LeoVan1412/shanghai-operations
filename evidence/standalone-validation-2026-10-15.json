@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "modVersion": "0.8.1-dev.2",
+  "scope": "Independent project extraction, reproducible packaging and synthetic regression only",
+  "runtimeSHA256": "bba8166cc1af74238d27e5e8a510c9249b578752bd9fa762a73fe78fbef510b3",
+  "runtimeUnchangedFromR16": true,
+  "codeAndTestSnapshotUnchanged": true,
+  "originalModIdPreserved": true,
+  "zipFile": "review-package/Shanghai-Operations-0.8.1-dev.2-review.zip",
+  "zipSHA256": "271c2cd94f74d60614cdd6c87930642605d6447e3ec803f4c88858e7a33e245b",
+  "zipBytes": 91840,
+  "archiveFiles": [
+    "manifest.json",
+    "index.js",
+    "README.md",
+    "LICENSE",
+    "LICENSE-DATA.md"
+  ],
+  "deterministicArchive": true,
+  "offlineRegression": {
+    "nodeVersion": "v24.16.0",
+    "scope": "Synthetic own-code tests only; no loaded-game run",
+    "tests": [
+      {
+        "script": "test_operations_mod.js",
+        "passed": true,
+        "exitCode": 0
+      },
+      {
+        "script": "test_service_planner.js",
+        "passed": true,
+        "exitCode": 0
+      },
+      {
+        "script": "test_dispatch_core.js",
+        "passed": true,
+        "exitCode": 0
+      },
+      {
+        "script": "test_dispatch_index.js",
+        "passed": true,
+        "exitCode": 0
+      },
+      {
+        "script": "test_expansion_core.js",
+        "passed": true,
+        "exitCode": 0
+      },
+      {
+        "script": "test_expansion_transaction.js",
+        "passed": true,
+        "exitCode": 0
+      },
+      {
+        "script": "test_dispatch_safety.js",
+        "passed": true,
+        "exitCode": 0
+      }
+    ],
+    "passed": true
+  },
+  "newLoadedGameAcceptance": false,
+  "publishReady": false,
+  "communitySubmissionPerformed": false,
+  "note": "Repository metadata, documentation and separate data attribution changed. No new game feature or map-data improvement is claimed."
+}
