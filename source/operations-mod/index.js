@@ -4,7 +4,7 @@
   const api = window.SubwayBuilderAPI;
   const TAG = "[Shanghai Operations]";
   const CITY_CODE = "PVG";
-  const VERSION = "0.8.1-dev.2";
+  const VERSION = "0.8.1";
   const DEFAULT_CENTER = [121.4737, 31.2304];
   const DEFAULT_ELEVATION = -10;
   const DEFAULT_LENGTH = 220;

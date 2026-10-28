@@ -1,14 +1,14 @@
 # 使用与兼容说明
 
-版本：Shanghai Operations 0.8.1-dev.2；模组 ID：`leovan-shanghai-operations`。
+版本：Shanghai Operations 0.8.1（开发预览）；模组 ID：`leovan-shanghai-operations`。
 
-当前为开发审核包，普通玩家高级启用流程尚未完成。独立项目准备完成不代表社区已接收、可从 Railyard Library 安装，或已完成长时间运营验收。
+社区已于北京时间 2026-10-28 [接受当前 PVG-only 范围并合并申请](https://github.com/Subway-Builder-Modded/registry/pull/13183)。0.8.1 修正社区版本识别；仍为开发预览，普通玩家高级启用流程和长时间运营验收尚未完成。社区接收不等于稳定性验收完成。
 
 ## 环境
 
 - 已取得并能正常运行的上海 PVG 地图；地图本体在 [原地图仓库](https://github.com/LeoVan1412/shanghai-pvg)。
 - 既有原生专项测试使用 Subway Builder 1.7.2。manifest 沿用 `>=1.7.0` 的声明范围，但其他版本并非都已实测。
-- 目前不支持社区已有 SHA 地图。跨地图兼容是否为社区接收前提，仍需维护者说明。
+- 目前不支持社区已有 SHA 地图。维护者已确认跨地图兼容不是本次接收的必要条件。
 - 先保留完整进度备份，使用独立测试进度。与同 ID 的旧版二选一，不能重复安装。
 
 ## 审核包

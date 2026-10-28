@@ -1,8 +1,8 @@
 {
   "id": "leovan-shanghai-operations",
   "name": "Shanghai Operations / 上海多制式运营",
-  "description": "One-click route planning with automatic recommendations, a five-tier PVG catalog, and express/through-operation rules. / 一键线路规划、五档轨道车辆及快慢车与跨线运营规则。",
-  "version": "0.8.1-dev.2",
+  "description": "Development preview; PVG only, not SHA. Route planning, five-tier vehicles, and express/through-service rules. / 开发预览，仅支持 PVG、不支持 SHA；线路规划、五档车辆及快慢车与直通规则。",
+  "version": "0.8.1",
   "author": {
     "name": "LeoVan",
     "url": "https://github.com/LeoVan1412"

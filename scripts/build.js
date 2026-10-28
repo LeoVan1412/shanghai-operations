@@ -7,6 +7,9 @@ function build() {
   const manifest = JSON.parse(fs.readFileSync(path.join(source, "manifest.json")));
   const project = JSON.parse(fs.readFileSync(path.join(root, "package.json")));
   if (manifest.version !== project.version) throw Error("Project and mod versions differ");
+  if (!/^\d+\.\d+\.\d+$/.test(manifest.version)) throw Error("Railyard release versions must use X.Y.Z");
+  const runtime = fs.readFileSync(path.join(source, "index.js"), "utf8");
+  if (!runtime.includes('const VERSION = "' + manifest.version + '";')) throw Error("Runtime and mod versions differ");
   const bytes = Buffer.concat([
     fs.readFileSync(path.join(source, "dispatch-core.js")), Buffer.from("\n"),
     fs.readFileSync(path.join(source, "expansion-core.js")),

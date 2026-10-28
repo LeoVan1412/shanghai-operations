@@ -1,6 +1,6 @@
 {
   "name": "shanghai-operations",
-  "version": "0.8.1-dev.2",
+  "version": "0.8.1",
   "private": true,
   "description": "Independent Shanghai PVG operations mod development project",
   "license": "MIT",
